@@ -1,0 +1,49 @@
+/***********************  TOP Bar ********************/
+.sidebar > ul{ list-style:none; margin:0px; padding:0px; }
+.sidebar > li a,.sidebar li a.collapsed.active{ display:block; padding: 15px; color:#fff;border-left:0px solid #dedede;  text-decoration:none}
+.sidebar > li a.active{border-left:5px solid #dedede; transition: all 0.5s  ease-in-out}
+.sidebar > li a i{ padding-right:5px;}
+.sidebar > ul li .sub-menu li a{ position:relative}
+#sidebar{position: fixed; z-index: 9999;}	
+.sidebar.fliph li{ position:relative}
+.sidebar.fliph .social_icons, .sidebar.fliph .copyright{display: none;}
+
+.list-sidebar > li i{display: none;}
+.sidebar.fliph i{display:block;}
+.copyright p{font-size: 14px;}
+.top_sidebar i{font-size: 40px; cursor:pointer;}
+.toggle_menu{display: none;}
+.filters-button-group{z-index: 9999; right:50px; top:50px;border-radius: 5px;}
+.filters-button-group li{cursor:pointer;}
+.grid-item{position:relative; overflow:hidden;}
+.image_content{
+    -webkit-transition: top 0.5s ease-in-out;
+    -moz-transition: top 0.5s ease-in-out;
+    -ms-transition: top 0.5s ease-in-out;
+    -o-transition: top 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out; 
+    top:100%;position: absolute; bottom:0; left:0; 
+    right:0; color:#fff; background: rgba(0,0,0,0.3); padding:20px;
+}
+.grid-item:hover .image_content {top:0;}
+.featured_image{position:relative;width:100%; height:400px; background-size: cover; background-repeat: no-repeat;}
+.page_title{position:absolute; bottom:30px; right:30px; padding:30px 50px; background:rgba(0,0,0,0.5); color:#fff;}
+.profile{overflow:hidden;}
+.profile_caption{
+    -webkit-transition: top 0.5s ease-in-out;
+    -moz-transition: top 0.5s ease-in-out;
+    -ms-transition: top 0.5s ease-in-out;
+    -o-transition: top 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out; 
+    top:100%;position: absolute; bottom:0; left:0; 
+    right:0; color:#fff; background: rgba(0,0,0,0.3); padding:20px;
+}
+.profile:hover .profile_caption {top:0;}
+
+@media all and (max-width:768px){
+    #sidebar{width:100%; height:auto !important;}
+    .sidebar_content,.close_sidebar{display:none}
+    .sidebar{width:100%;}
+    .toggle_menu{display: block;}
+    .featured_image{height: 300px;}
+}
